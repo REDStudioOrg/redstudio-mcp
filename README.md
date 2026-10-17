@@ -1,8 +1,59 @@
-# redstudio-mcp
+# RedStudio MCP
 
-MCP server for the RedStudio CMS external API. Gives an agent (Claude Code, Claude Desktop, any MCP client) tools to read and write a customer's hosted website: pages, navigation/footer components, media, site-wide CSS and head scripts, redirects, booking hours and meeting types, and blog posts.
+**Describe the website you want. Your AI assistant builds it, and it's live.**
 
-Docs: https://redstudio.ie/mcp
+Connect Claude, Cursor, VS Code or any MCP client to [RedStudio](https://redstudio.ie) and your assistant builds a real, hosted website for you: pages, navigation, images, booking calendar and blog. You don't need a server, a deploy pipeline or a developer.
+
+[Get started](https://redstudio.ie/register) · [Docs](https://redstudio.ie/mcp) · [Pricing](https://redstudio.ie/pricing)
+
+## Why build on RedStudio
+
+**Live today, not in six weeks.** Hosting, SSL and your own domain are part of every plan. Your assistant writes the pages, and they're live on your site the moment they're saved. There's nothing to deploy.
+
+**Start selling straight away.** Your site comes with an online shop for physical and digital products, with secure Stripe payments, shipping rates, discount codes and order emails. Your assistant builds the pages, and you add products in the dashboard.
+
+**Fill your calendar without the email back and forth.** Customers book and pay for appointments on your site. Your assistant can set your opening hours, buffers and meeting types for you, and bookings sync with Google Calendar.
+
+**Sell tickets to your events.** Multiple ticket types, Stripe checkout, QR code tickets and a built-in scanner for the door.
+
+**Get found on Google.** Your blog lives on your own domain, so every post builds your site's search ranking. Your assistant can write and publish posts for you.
+
+**Stay compliant without hiring a lawyer.** Cookie consent, privacy and cookie policy templates, and cookie-less analytics that need no consent banner are all built in.
+
+**Never locked into the chat window.** Everything your assistant builds can be edited afterwards in the drag-and-drop builder, by you or anyone on your team.
+
+**Mistakes are one click to undo.** Every page save records a revision, so you can restore any earlier version from the page history.
+
+**Your site and nothing else.** The API key only works for your own website, and you can revoke it at any time.
+
+## Platform features
+
+| | |
+|---|---|
+| **Online shop** | Physical and digital products, Stripe payments, shipping, tax, discount codes, refunds |
+| **Appointment booking** | Free or paid bookings, Google Calendar and Google Meet, reminders, buffer times |
+| **Event ticketing** | Ticket tiers, online sales, QR code check-in, attendee exports |
+| **Blog** | SEO-friendly permalinks, drafts and archiving, AI writer |
+| **Page builder** | Drag-and-drop editor, responsive pages, revision history |
+| **Navigation builder** | Menus, call-to-action buttons, site-wide header and footer |
+| **Contact forms** | reCAPTCHA spam protection, submissions by email and in the dashboard |
+| **Analytics** | Cookie-less, GDPR friendly, monthly report by email |
+| **Compliance** | Cookie consent banner, privacy and cookie policy templates |
+| **Hosting and SSL** | Managed hosting, free SSL with automatic renewal, custom domain |
+
+Plans start at EUR 25 a month. One account hosts one website. See [pricing](https://redstudio.ie/pricing).
+
+## Try asking
+
+> Build a five page website for my physiotherapy clinic in Cork: home, services, about, prices and contact. Use calm blues and greens.
+
+> Set up online booking: 30 minute consultations at 60 euro, Monday to Friday 9 to 5, with 15 minutes between appointments.
+
+> Upload the photos in ./photos and add a gallery to the about page.
+
+> Write and publish three blog posts about recovering from a running injury.
+
+> We moved /services to /treatments. Rename the page and redirect the old URL.
 
 ## Quick start
 
@@ -45,7 +96,7 @@ node src/server.js
 
 For a local server with a self-signed certificate also set `NODE_TLS_REJECT_UNAUTHORIZED=0`.
 
-## Tools
+## Tools reference
 
 | Tool | What it does |
 |------|--------------|
