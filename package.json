@@ -1,0 +1,23 @@
+{
+  "name": "redstudio-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that lets AI assistants build and edit websites hosted on RedStudio: pages, navigation, media, bookings, site settings and blog posts.",
+  "mcpName": "ie.redstudio/mcp",
+  "homepage": "https://redstudio.ie/mcp",
+  "repository": { "type": "git", "url": "git+https://github.com/REDStudioOrg/redstudio-mcp.git" },
+  "bugs": "https://github.com/REDStudioOrg/redstudio-mcp/issues",
+  "license": "MIT",
+  "keywords": ["mcp", "model-context-protocol", "website-builder", "cms", "hosting", "claude", "cursor", "redstudio"],
+  "type": "module",
+  "bin": { "redstudio-mcp": "src/server.js" },
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  }
+}
